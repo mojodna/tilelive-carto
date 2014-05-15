@@ -6,8 +6,8 @@
   "author": "Seth Fitzsimmons <seth@mojodna.net>",
   "license": "ISC",
   "dependencies": {
-    "carto": "^0.9.5",
+    "carto": "^0.10.0",
     "tilelive-mapnik": "^0.6.9",
-    "async": "^0.7.0"
+    "async": "^0.8.0"
   }
 }
