@@ -4,6 +4,10 @@
   "description": "A Carto style source for tilelive",
   "main": "index.js",
   "author": "Seth Fitzsimmons <seth@mojodna.net>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mojodna/tilelive-carto.git"
+  },
   "license": "ISC",
   "dependencies": {
     "carto": "^0.10.0",
