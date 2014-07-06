@@ -1,6 +1,6 @@
 # Changes
 
-## v0.3.0
+## v0.3.0 - 7/5/14
 
 * Pass query options through (for scale, etc.)
 * Updated to `carto`-0.11.0's synchronous API
