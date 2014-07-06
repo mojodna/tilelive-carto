@@ -54,25 +54,27 @@ module.exports = function(tilelive, options) {
 
         mml.Stylesheet = styles;
 
-        new carto.Renderer().render(mml, function(err, xml) {
-          if (err) {
-            if (Array.isArray(err)) {
-              err.forEach(function(e) {
-                // TODO what's this?
-                carto.writeError(e, options);
-              });
-            } else {
-              return callback(err);
-            }
-          } else {
-            var sourceURI = {
-              protocol: "mapnik:",
-              xml: xml
-            };
+        var xml;
 
-            return tilelive.load(sourceURI, callback);
+        try {
+          xml = new carto.Renderer().render(mml);
+        } catch (err) {
+          if (Array.isArray(err)) {
+            err.forEach(function(e) {
+              // TODO what's this?
+              carto.writeError(e, options);
+            });
+          } else {
+            return callback(err);
           }
-        });
+        }
+
+        var sourceURI = {
+          protocol: "mapnik:",
+          xml: xml
+        };
+
+        return tilelive.load(sourceURI, callback);
       });
     });
   };
