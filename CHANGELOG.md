@@ -1,5 +1,9 @@
 # Changes
 
+## v0.2.1 - 7/5/14
+
+* Support inlined stylesheets properly
+
 ## v0.2.0 - 5/15/14
 
 * Updated to `carto`-0.10.0

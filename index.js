@@ -32,6 +32,11 @@ module.exports = function(tilelive, options) {
       }
 
       return async.map(mml.Stylesheet, function(mss, done) {
+        if (typeof(mss) === "object") {
+          // stylesheet was inlined, by millstone or otherwise
+          return done(null, mss);
+        }
+
         return fs.readFile(path.join(path.dirname(filename), mss), "utf8", function(err, style) {
           if (err) {
             return done(err);
