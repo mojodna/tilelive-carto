@@ -1,6 +1,6 @@
 {
   "name": "tilelive-carto",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A Carto style source for tilelive",
   "main": "index.js",
   "author": "Seth Fitzsimmons <seth@mojodna.net>",
