@@ -71,7 +71,8 @@ module.exports = function(tilelive, options) {
 
         var sourceURI = {
           protocol: "mapnik:",
-          xml: xml
+          xml: xml,
+          query: uri.query
         };
 
         return tilelive.load(sourceURI, callback);

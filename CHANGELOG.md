@@ -2,6 +2,7 @@
 
 ## v0.3.0
 
+* Pass query options through (for scale, etc.)
 * Updated to `carto`-0.11.0's synchronous API
 
 ## v0.2.1 - 7/5/14
