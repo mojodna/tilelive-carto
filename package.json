@@ -12,6 +12,6 @@
   "dependencies": {
     "carto": "^0.11.0",
     "tilelive-mapnik": "^0.6.9",
-    "async": "^0.8.0"
+    "async": "^0.9.0"
   }
 }
