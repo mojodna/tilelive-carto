@@ -1,5 +1,9 @@
 # Changes
 
+## v0.4.0 - 7/28/14
+
+* Watch for and recompile changes when `?cache=false`
+
 ## v0.3.0 - 7/5/14
 
 * Pass query options through (for scale, etc.)
