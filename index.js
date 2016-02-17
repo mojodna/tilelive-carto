@@ -5,14 +5,11 @@ var fs = require("fs"),
     url = require("url");
 
 var async = require("async"),
-    carto = require("carto"),
-    tileliveMapnik = require("tilelive-mapnik");
+    carto = require("carto");
 
 var PREFIX = "carto+";
 
 module.exports = function(tilelive, options) {
-  tileliveMapnik.registerProtocols(tilelive);
-
   var Carto = function(uri, callback) {
     uri = url.parse(uri, true);
 
