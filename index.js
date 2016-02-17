@@ -14,7 +14,7 @@ module.exports = function(tilelive, options) {
     uri = url.parse(uri, true);
 
     uri.protocol = uri.protocol.replace(PREFIX, "");
-    this.sourceURI = null;
+    this.uri = null;
 
     var version = 0;
 
@@ -30,8 +30,8 @@ module.exports = function(tilelive, options) {
             return;
           }
 
-          this.sourceURI = sourceURI;
-          this.sourceURI.query.version = ++version;
+          this.uri = sourceURI;
+          this.uri.query.version = ++version;
         }.bind(this));
       }.bind(this));
     }
@@ -41,8 +41,8 @@ module.exports = function(tilelive, options) {
         return callback(err);
       }
 
-      this.sourceURI = sourceURI;
-      this.sourceURI.query.version = version;
+      this.uri = sourceURI;
+      this.uri.query.version = version;
 
       return callback(null, this);
     }.bind(this));
@@ -114,7 +114,7 @@ module.exports = function(tilelive, options) {
   };
 
   Carto.prototype.getInfo = function(callback) {
-    return tilelive.load(this.sourceURI, function(err, source) {
+    return tilelive.load(this.uri, function(err, source) {
       if (err) {
         return callback(err);
       }
@@ -124,7 +124,7 @@ module.exports = function(tilelive, options) {
   };
 
   Carto.prototype.getTile = function(z, x, y, callback) {
-    return tilelive.load(this.sourceURI, function(err, source) {
+    return tilelive.load(this.uri, function(err, source) {
       if (err) {
         return callback(err);
       }
