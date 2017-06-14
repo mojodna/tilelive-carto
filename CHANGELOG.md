@@ -1,5 +1,15 @@
 # Changes
 
+## v0.6.0 - 6/13/17
+
+* Update dependencies
+
+## v0.5.0 - 2/16/16
+
+* Prevent variable shadowing when used with `tilelive-streaming`
+* Move `tilelive-mapnik` to a peer dependency
+* Update dependencies
+
 ## v0.4.0 - 7/28/14
 
 * Watch for and recompile changes when `?cache=false`
