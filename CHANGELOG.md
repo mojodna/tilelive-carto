@@ -1,5 +1,9 @@
 # Changes
 
+## v0.7.0 - 6/28/18
+
+* Upgrade `@mapbox/tilelive-mapnik`
+
 ## v0.6.0 - 6/13/17
 
 * Update dependencies
