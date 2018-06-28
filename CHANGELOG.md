@@ -1,5 +1,9 @@
 # Changes
 
+## v0.8.0 - 6/28/18
+
+* Upgrade `carto` to `^1.0.1`
+
 ## v0.7.0 - 6/28/18
 
 * Upgrade `@mapbox/tilelive-mapnik`

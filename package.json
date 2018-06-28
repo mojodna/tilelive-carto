@@ -10,7 +10,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "carto": "^0.18.1",
+    "carto": "^1.0.1",
     "async": "^1.5.2"
   },
   "peerDependencies": {
